@@ -1,0 +1,60 @@
+{
+  "name": "esmeta",
+  "version": "0.0.1",
+  "description": "Handy function to handle import.meta",
+  "scripts": {
+    "lint": "eslint --ext js,md .",
+    "test": "ava",
+    "precommit": "lint-staged",
+    "prepush": "ava"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^1.0.0-beta.4",
+    "eslint": "^4.19.1",
+    "eslint-config-concise": "^0.23.0",
+    "eslint-config-concise-ava": "^0.23.0",
+    "eslint-config-concise-esnext": "^0.22.0",
+    "esm": "^3.0.26",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.4",
+    "preslint": "^0.23.1"
+  },
+  "repository": "ratson/esmeta",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 9"
+  },
+  "files": [
+    "*.md",
+    "index.js"
+  ],
+  "keywords": [
+    "import.meta",
+    "import",
+    "meta",
+    "require",
+    "main",
+    "module",
+    "__filename",
+    "__dirname"
+  ],
+  "ava": {
+    "babel": false,
+    "require": [
+      "esm"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "concise",
+      "concise-esnext",
+      "concise-ava"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "preslint --fix --git"
+    ]
+  }
+}
