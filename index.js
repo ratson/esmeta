@@ -2,6 +2,8 @@
 const URL = require('url')
 const Path = require('path')
 
+const isMain = require('is-main')
+
 module.exports = importMeta => {
   const filename = URL.parse(importMeta.url).pathname
   const dirname = Path.dirname(filename)
@@ -14,7 +16,7 @@ module.exports = importMeta => {
       return Path.join(dirname, ...args)
     },
     isMain() {
-      return process.mainModule && filename === process.mainModule.filename
+      return isMain(importMeta)
     },
   }
 }

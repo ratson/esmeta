@@ -8,16 +8,18 @@
     "precommit": "lint-staged",
     "prepush": "ava"
   },
-  "dependencies": {},
+  "dependencies": {
+    "is-main": "^0.1.0"
+  },
   "devDependencies": {
     "ava": "^1.0.0-beta.4",
     "eslint": "^4.19.1",
-    "eslint-config-concise": "^0.23.0",
+    "eslint-config-concise": "^0.24.0",
     "eslint-config-concise-ava": "^0.23.0",
-    "eslint-config-concise-esnext": "^0.22.0",
-    "esm": "^3.0.26",
+    "eslint-config-concise-esnext": "^0.24.1",
+    "esm": "^3.0.28",
     "husky": "^0.14.3",
-    "lint-staged": "^7.0.4",
+    "lint-staged": "^7.0.5",
     "preslint": "^0.23.1"
   },
   "repository": "ratson/esmeta",
