@@ -1,6 +1,6 @@
 {
   "name": "esmeta",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Handy function to handle import.meta",
   "scripts": {
     "lint": "eslint --ext js,md .",
