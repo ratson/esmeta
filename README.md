@@ -26,3 +26,7 @@ const importMeta = esmeta(import.meta)
 }
 */
 ```
+
+## Related
+
+- [is-main](https://github.com/ratson/is-main) - Check if current module is main module.
