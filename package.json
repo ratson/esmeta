@@ -9,7 +9,8 @@
     "prepush": "ava"
   },
   "dependencies": {
-    "is-main": "^0.1.0"
+    "is-main": "^0.2.0",
+    "resolve-from": "^4.0.0"
   },
   "devDependencies": {
     "ava": "^1.0.0-beta.4",

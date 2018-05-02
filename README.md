@@ -1,6 +1,6 @@
 # esmeta
 
-Handy function to handle import.meta
+Handy function to handle `import.meta`
 
 ## Installation
 
@@ -18,11 +18,12 @@ import esmeta from 'esmeta'
 const importMeta = esmeta(import.meta)
 /*
 {
-  url: "file:///a/b/c.mjs"  // same as import.meta.url
+  url: "file:///a/b/c.mjs"  // same as `import.meta.url`
   dirname: "/a/b"
   filename: "/a/b/c.mjs"
   dirnameJoin(...paths)  // helper function to join path
   isMain()  // return true if match to `process.mainModule`
+  resolve()  // return the resolved filename like `require.resolve`
 }
 */
 ```

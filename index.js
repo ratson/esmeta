@@ -3,6 +3,7 @@ const URL = require('url')
 const Path = require('path')
 
 const isMain = require('is-main')
+const resolveFrom = require('resolve-from')
 
 module.exports = importMeta => {
   const filename = URL.parse(importMeta.url).pathname
@@ -17,6 +18,9 @@ module.exports = importMeta => {
     },
     isMain() {
       return isMain(importMeta)
+    },
+    resolve(request) {
+      return resolveFrom(dirname, request)
     },
   }
 }
